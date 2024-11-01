@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="batidor" width="150" height="150">
+        <h1>Tortas & Pasteles</h1>
+        <p>Bienvenidos a mi carrito</p>
+    </header>
+    <nav>
+        <p>
+            <a href="index.html">Inicio</a>
+            <a href="#">Productos</a> 
+            <a href="contacto.html" target="_blank">Contacto</a>
+        </p>
+    </nav>
+    <main>
+        
+        <p>Productos</p>
+        <section>
+            <card></card>
+            <card></card>
+            <card></card>
+        </section>
+        
+    </main>
+    <section>
+        <h4>Pagos electrónicos</h4>
+        <ul>
+            <li>Modo</li>
+            <li>Mercado Pago</li>
+            <li>Débito</li>
+            <li>Crédito</li>
+        </ul>
+        <h4>Pago efectivo</h4>
+    </section>
+    <video controls alt="receta" width="80%" height="150px"
+        src="video/Budín de Vainilla!! Clásico, facil y rápido!!.mp4"  >
+        <track src="video/Budín de Vainilla!! Clásico, facil y rápido!! [Spanish (auto-generated)] [DownloadYoutubeSubtitles.com] (3).vtt" label="Español" default>
+    </video>
+    <section>
+        <p>Nos encontramos en</p>
+        <iframe title="La Plata centro" width="80%" height="200" src="https://www.google.es/maps/@-34.9075447,-57.9257684,13z?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"></iframe>
+    </section>
+    <form action="http://formspree.io/f{form_id}" method="post">
+        <label for="nombre">Nombre: 
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </label>
+        <label for="nombre">Apellido: 
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </label>
+        <label for="email">Correo: 
+            <input type="email" name="email" id="email" placeholder="Email">
+        </label>
+        <label for="lugar">Lugar
+            <select id="lugar" name="lugar">
+                <option value="caba">CABA</option>
+                <option value="amba">AMBA</option>
+                <option value="otro">Otro</option>
+            </select>
+        </label>
+        <label>Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Escribe un mensaje" rows="5" cols="30">Escribe tu mensaje</textarea>
+        </label>
+        <input type="submit" value="Enviar datos">
+    </form> 
+    <footer>
+        <p>Datos de Contactos</p>
+        <p class="copyright">&copy Copyriright - Tortas & Pasteles - 2024</p>
+    </footer>
+</body>
+</html>
