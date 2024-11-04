@@ -1,0 +1,141 @@
+*{
+    background: rgb(252, 191, 117);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    font-family: "Dancing Script", cursive;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    align-items: center;
+}
+header .tema{
+    display: flex;
+    gap: 1rem;;
+}
+h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    padding: 0;
+    
+    
+    font-size:x-large;
+    
+}
+
+nav ul li{  
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    background-color: rgb(246, 233, 173);
+}
+
+li{
+    list-style: none;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background: linear-gradient(0deg, rgba(246,158,53,0.926829268292683) 4%, rgba(242,251,114,0.8926829268292683) 98%); 
+}
+h3{
+    margin: 0,5em;
+    border-color: rgb(10, 10, 10);
+    background-color: rgb(250, 203, 165);
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+.productos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+}
+.productos img{
+    width: 80%;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.tarjeta {
+   
+   border: 1,5px solido coral; 
+   border-radius: 0.5rem;
+   padding: 1rem;
+   
+   width: 300px;
+   align-items: center;
+   text-align: center;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+form{
+    margin: 1rem;
+    width: 80%;
+    background-color: rgb(250, 203, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    margin: .0rem;
+}
+
+.reseñas{
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3 ,minmax(15rem ,1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+@media (width < 500px){
+    .reseñas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (1000 < width >= 500px){
+    .reseñas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+}
+.reseña{
+    width: 15rem;
+    border: 1px solid rgb(204, 87, 3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+#footer{
+    align-items: center;
+}
+#footer h4{
+    display: inline;
+}
+#footer img{
+    width: 50px;
+    height: 50px;
+}
+
+

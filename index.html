@@ -3,52 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
-    <link rel="icon" href="./img/favicon.ico">
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
     <link rel="stylesheet" href="styles.css">
+    <title>Carrito de compras</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="batidor" width="150" height="150">
-        <h1>Tortas & Pasteles</h1>
-        <p>Bienvenidos a mi carrito</p>
+    <!--Encabezado-->
+    <header id="inicio">
+        <div class="tema">
+            <img src="img/logo.png" alt="batidor" width="80" height="80">
+            <h1>Tortas & Pasteles</h1>
+    
+            <nav>
+                <ul>
+                    <li><span class="material-symbols-outlined">
+                        home
+                        </span> <a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos" >Productos</a></li> 
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <p>
-            <a href="index.html">Inicio</a>
-            <a href="#">Productos</a> 
-            <a href="contacto.html" target="_blank">Contacto</a>
-        </p>
-    </nav>
+    
     <main>
-        
-        <p>Productos</p>
-        <section>
-            <card></card>
-            <card></card>
-            <card></card>
+        <h3>Productos</h3>
+        <section class="productos" id="productos">
+            
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="img/cakes-1776661_640.jpg" width="100" height="100">
+                    <h2>Torta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam.
+                    </p>
+                    <a href="">Más información</a>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/cakes-1776661_640.jpg" width="100" height="100">
+                    <h2>Torta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam.
+                    </p>
+                    <a href="">Más información</a>
+                </div>
+                 <div class="tarjeta">
+                    <img src="img/cakes-1776661_640.jpg" width="100" height="100">
+                    <h2>Torta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam.
+                    </p>
+                    <a href="">Más información</a>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/cakes-1776661_640.jpg" width="100" height="100">
+                    <h2>Torta</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam.
+                    </p>
+                    <a href="">Más información</a>
+                </div>
+            </div>
+           
         </section>
-        
-    </main>
-    <section>
-        <h4>Pagos electrónicos</h4>
-        <ul>
-            <li>Modo</li>
-            <li>Mercado Pago</li>
-            <li>Débito</li>
-            <li>Crédito</li>
-        </ul>
-        <h4>Pago efectivo</h4>
-    </section>
-    <video controls alt="receta" width="80%" height="150px"
+        <section id="pagos">
+            <h3>Formas de pago</h3>
+            <h4>Pagos electrónicos</h4>
+            <ul>
+                <li>Modo</li>
+                <li>Mercado Pago</li>
+                <li>Débito</li>
+                <li>Crédito</li>
+            </ul>
+            <h4>Pago efectivo</h4>
+        </section>
+        <video controls alt="receta" width="80%" height="150px"
         src="video/Budín de Vainilla!! Clásico, facil y rápido!!.mp4"  >
-        <track src="video/Budín de Vainilla!! Clásico, facil y rápido!! [Spanish (auto-generated)] [DownloadYoutubeSubtitles.com] (3).vtt" label="Español" default>
-    </video>
-    <section>
-        <p>Nos encontramos en</p>
-        <iframe title="La Plata centro" width="80%" height="200" src="https://www.google.es/maps/@-34.9075447,-57.9257684,13z?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"></iframe>
-    </section>
-    <form action="http://formspree.io/f{form_id}" method="post">
+        <track src="video/Budín de Vainilla!! Clásico, facil y rápido!! [Spanish (auto-generated)] [DownloadYoutubeSubtitles.com] (3).vtt" kind="subtitles" label="Español">
+        </video>
+        <h3>Nos encontramos en</h3>
+        <!--Cartel de no poder conectar-->
+        <iframe  
+            id="mapa"
+            title="Mapa de La Plata"
+            width="80%" height="200"
+            src="https://www.google.com.ar/maps/@-34.9117679,-57.9272704,14z?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+            scrolling="auto" frameborder="0" allowfullscreen>
+        </iframe>
+    </section class="contacto">
+    <span>
+    <h3>Para consultarnos</h3>    
+    <form action="https://formspree.io/f/xkgnjzpj" method="post">
         <label for="nombre">Nombre: 
             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
         </label>
@@ -60,19 +107,55 @@
         </label>
         <label for="lugar">Lugar
             <select id="lugar" name="lugar">
-                <option value="caba">CABA</option>
-                <option value="amba">AMBA</option>
-                <option value="otro">Otro</option>
+                <option>CABA</option>
+                <option>AMBA</option>
+                <option>Otro</option>
             </select>
         </label>
         <label>Mensaje:</label>
-        <textarea name="mensaje" id="mensaje" placeholder="Escribe un mensaje" rows="5" cols="30">Escribe tu mensaje</textarea>
+        <textarea name="mensaje" id="mensaje" placeholder="Escribe un mensaje" rows="5" cols="30"></textarea>
         </label>
-        <input type="submit" value="Enviar datos">
-    </form> 
-    <footer>
-        <p>Datos de Contactos</p>
-        <p class="copyright">&copy Copyriright - Tortas & Pasteles - 2024</p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </label>
+    </form>
+    </span>
+    
+    </main>
+    <section>
+        <h2>Reseñas</h2>
+        <p>Nuestros clientes comentan:
+        </p>
+        <div class="reseñas">
+            <div class="reseña">
+            <h2>Alina</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sed, iste dolorum quo exercitationem cum!</p>
+            <cite>Alina</cite>
+        </div>
+        <div class="reseña">
+            <h2>Rocio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sed, iste dolorum quo exercitationem cum!</p>
+            <cite>Rocio</cite>
+        </div>
+        <div class="reseña">
+            <h2>Luis</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sed, iste dolorum quo exercitationem cum!</p>
+            <cite>Luis</cite>
+        </div>
+        </div>
+    </section>
+    <!--Pie de la página-->     
+    <footer id="footer">
+        <div class="footer">
+        <h4>Seguinos por</h4>
+        
+        <img src="img/3721672-instagram_108066.webp" alt="instagram"></li>
+        <h4>Escribinos por</h4>
+        <img src="img/whatsapp_108042.webp" alt="whatsapp">
+    
+        <h5 class="copyright">&copy Copyriright - Tortas & Pasteles - 2024</h5>
+    </div>
     </footer>
 </body>
 </html>
